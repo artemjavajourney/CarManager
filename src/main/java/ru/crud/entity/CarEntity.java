@@ -6,7 +6,7 @@ import java.math.BigDecimal;
  * Класс описывает сущность машины
  * Created by vasilev-ad on 11.05.24
  */
-public class Car {
+public class CarEntity {
 
     /**
      * Идентификатор
@@ -33,9 +33,10 @@ public class Car {
      */
     private BigDecimal price;
 
-    public Car() {}
+    public CarEntity() {
+    }
 
-    public Car(Long id, String brand, String model, String color, BigDecimal price) {
+    public CarEntity(Long id, String brand, String model, String color, BigDecimal price) {
         this.id = id;
         this.brand = brand;
         this.model = model;
@@ -85,7 +86,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "CarEntity{" +
                 "id=" + id +
                 ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
